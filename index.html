@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>速算24点 · 四张牌，算出 24</title>
+<meta name="description" content="速算24点：给你四张扑克牌，用加、减、乘、除和括号把四个数字凑成 24。规则简单，变化无穷。了解玩法、试试随机一局、掌握速算技巧。">
+<meta name="theme-color" content="#5b6cff">
+<meta property="og:title" content="速算24点 · 四张牌，算出 24">
+<meta property="og:description" content="四张牌、四个数字、只用四则运算，凑出 24。规则一分钟学会，一局三秒上手。">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235b6cff'/%3E%3Ctext x='32' y='43' font-family='system-ui,sans-serif' font-size='26' font-weight='700' fill='white' text-anchor='middle'%3E24%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到正文</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">24</span>
+      速算24点
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#rules">玩法规则</a>
+      <a href="#play">试一局</a>
+      <a href="#tips">速算技巧</a>
+      <a href="#modes">游戏模式</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="btn btn-primary btn-sm nav-cta" href="#play">开始挑战</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ============================================================ Hero -->
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot" aria-hidden="true"></span>一局只要几秒的脑力体操</span>
+        <h1>四张牌，<br>算出 <span class="grad">24</span></h1>
+        <p class="hero-lead">
+          速算24点：给你四张扑克牌，用加、减、乘、除和括号，把四个数字凑成 24。
+          规则一分钟学会，解法却千变万化——它考的不是算术，而是你对数字的直觉。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#play">立即试一局 →</a>
+          <a class="btn btn-ghost" href="#rules">看看怎么玩</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>4 张</strong><span>随机扑克牌</span></div>
+          <div><strong>24 点</strong><span>唯一目标</span></div>
+          <div><strong>约 3 秒</strong><span>高手一局</span></div>
+        </div>
+      </div>
+
+      <div class="hero-cards" aria-hidden="true">
+        <div class="deco-card is-red"><span class="suit tl">♥</span><span class="big">3</span><span class="suit br">♥</span></div>
+        <div class="deco-card"><span class="suit tl">♠</span><span class="big">8</span><span class="suit br">♠</span></div>
+        <div class="deco-card"><span class="suit tl">♣</span><span class="big">8</span><span class="suit br">♣</span></div>
+        <div class="deco-card is-red"><span class="suit tl">♦</span><span class="big">3</span><span class="suit br">♦</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== 规则 -->
+  <section class="section section-alt" id="rules">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">玩法规则</span>
+        <h2>四步，就懂了</h2>
+        <p>没有隐藏规则，也没有冷门运算。你需要的只有四则运算和一点点鬼点子。</p>
+      </div>
+
+      <div class="rule-grid">
+        <article class="rule-card">
+          <span class="rule-num">01</span>
+          <h3>发四张牌</h3>
+          <p>每局随机发四张扑克牌。A 记作 1，J / Q / K 分别记作 11 / 12 / 13。</p>
+        </article>
+        <article class="rule-card">
+          <span class="rule-num">02</span>
+          <h3>每张用一次</h3>
+          <p>四张牌必须全部用上，而且每张只能用一次，不能丢弃，也不能重复使用。</p>
+        </article>
+        <article class="rule-card">
+          <span class="rule-num">03</span>
+          <h3>只能加减乘除</h3>
+          <p>允许 + − × ÷ 四种运算和括号，可以任意组合中间结果，但不允许开方、阶乘等其它运算。</p>
+        </article>
+        <article class="rule-card">
+          <span class="rule-num">04</span>
+          <h3>结果等于 24</h3>
+          <p>最终算式的结果必须精确等于 24。只要有一种凑法成立，这手牌就算解出来了。</p>
+        </article>
+      </div>
+
+      <div class="example-row">
+        <div class="example ok">
+          <span class="mark" aria-hidden="true">✓</span>
+          <div>
+            <code>3 3 6 2 → (3+3)×(6−2)</code>
+            <span class="hint">四张牌各用一次，结果正好 24</span>
+          </div>
+        </div>
+        <div class="example no">
+          <span class="mark" aria-hidden="true">✕</span>
+          <div>
+            <code>3 3 6 2 → 3+3+6+2</code>
+            <span class="hint">结果是 14，不是 24</span>
+          </div>
+        </div>
+        <div class="example no">
+          <span class="mark" aria-hidden="true">✕</span>
+          <div>
+            <code>3 3 6 2 → 6×2×3</code>
+            <span class="hint">只用了三张牌，3 没有用上</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== 试一局 -->
+  <section class="section" id="play">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">互动示例</span>
+        <h2>来，试一局</h2>
+        <p>下面这四张牌一定有解。先自己想一想，想不出来再点「查看解法」。</p>
+      </div>
+
+      <div class="demo">
+        <div class="hand" id="hand" aria-live="polite" aria-label="本局四张牌"></div>
+        <div class="demo-side">
+          <h3>用这四个数凑出 24</h3>
+          <p>加减乘除和括号随便用，四个数字都得用上。没头绪？换一组，或者偷看答案。</p>
+          <div class="row">
+            <button class="btn btn-primary" id="deal-btn" type="button">换一组</button>
+            <button class="btn btn-ghost" id="reveal-btn" type="button" aria-expanded="false" aria-controls="answer">查看解法</button>
+          </div>
+          <div class="answer" id="answer" hidden>
+            <span class="label">一种解法</span>
+            <code id="answer-expr">—</code>
+          </div>
+          <p class="kbd-hint">快捷键：<kbd>N</kbd> 换牌 · <kbd>S</kbd> 看解法 <span id="hand-count" aria-live="polite"></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== 技巧 -->
+  <section class="section section-alt" id="tips">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">速算技巧</span>
+        <h2>先找骨架，再填数字</h2>
+        <p>大多数 24 点的解法都长成这几种形状。记住它们，速度能快一倍。</p>
+      </div>
+
+      <div class="tips">
+        <article class="tip">
+          <span class="ico" aria-hidden="true">🎯</span>
+          <h3>凑 3 × 8</h3>
+          <p>把四张牌分成两组，一组凑成 3，一组凑成 8，相乘即 24；剩下的牌想办法凑成 1 或 0。</p>
+          <span class="eg">3 5 5 8 → (3×8) + (5−5) = 24</span>
+        </article>
+        <article class="tip">
+          <span class="ico" aria-hidden="true">🧩</span>
+          <h3>凑 4 × 6</h3>
+          <p>和 3×8 同理：先找出能拼成 4 和 6 的两组数，再相乘。</p>
+          <span class="eg">8 4 3 2 → (8−4) × (3×2) = 24</span>
+        </article>
+        <article class="tip">
+          <span class="ico" aria-hidden="true">⚖️</span>
+          <h3>凑 2 × 12</h3>
+          <p>大牌多的时候尤其好用：两张牌凑 12，另外两张凑 2。</p>
+          <span class="eg">5 6 7 8 → (5+7) × (8−6) = 24</span>
+        </article>
+        <article class="tip">
+          <span class="ico" aria-hidden="true">➕</span>
+          <h3>加减凑整</h3>
+          <p>24 也可以由「大数 − 小数」得到，比如 28 − 4、30 − 6、25 − 1。</p>
+          <span class="eg">10 11 12 13 → (13+12) − (11−10) = 24</span>
+        </article>
+        <article class="tip">
+          <span class="ico" aria-hidden="true">➗</span>
+          <h3>大胆用除法</h3>
+          <p>先把两张牌相除得到分数，再和别的数相乘，往往能绝处逢生。</p>
+          <span class="eg">3 3 8 8 → 8 ÷ (3 − 8÷3) = 24</span>
+        </article>
+        <article class="tip">
+          <span class="ico" aria-hidden="true">🔁</span>
+          <h3>倒推法</h3>
+          <p>先问「最后一步是什么」：若是乘法，就想 24 的因数；若是加法，就想谁差多少。</p>
+          <span class="eg">24 = 6×4 = 8×3 = 12×2 = 25−1 …</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== 模式 -->
+  <section class="section" id="modes">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">游戏模式</span>
+        <h2>三种节奏，任你挑</h2>
+        <p>想慢慢琢磨就玩经典，想练反应就开限时，想找虐就去闯关。</p>
+      </div>
+
+      <div class="modes">
+        <article class="mode">
+          <span class="lvl">入门友好</span>
+          <h3>经典模式</h3>
+          <p>不限时间，一题一题慢慢来。适合刚学会规则、想稳稳练手感的时候。</p>
+          <ul>
+            <li>不限时，随时可以换题</li>
+            <li>答对 +10 分，答错不扣分</li>
+            <li>记录你的解题总数与正确率</li>
+          </ul>
+        </article>
+
+        <article class="mode mode--warm">
+          <span class="lvl">手速挑战</span>
+          <h3>限时挑战</h3>
+          <p>每题 60 秒，倒计时归零就换下一题。答得越快，分数越高。</p>
+          <ul>
+            <li>单题 60 秒，超时判负</li>
+            <li>10 秒内答对额外 +5 分</li>
+            <li>连续答对触发连击加成</li>
+          </ul>
+        </article>
+
+        <article class="mode">
+          <span class="lvl">进阶玩家</span>
+          <h3>闯关模式</h3>
+          <p>难度一关比一关高，从一眼能看出的牌型，慢慢过渡到需要分数运算的硬骨头。</p>
+          <ul>
+            <li>关卡递进，题目越来越刁</li>
+            <li>每关有 3 次提示机会</li>
+            <li>通关解锁「无解判定」挑战</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== 计分 -->
+  <section class="section section-alt" id="score">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">计分规则</span>
+        <h2>分数怎么算</h2>
+        <p>规则简单，但足够让高手之间的差距拉开。</p>
+      </div>
+
+      <table class="score-table">
+        <caption class="sr-only">速算24点计分规则</caption>
+        <thead>
+          <tr><th scope="col">行为</th><th scope="col">分数</th><th scope="col">说明</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>答对一题</td><td class="num">+10</td><td>提交正确算式即得分</td></tr>
+          <tr><td>闪电解题</td><td class="num">+5</td><td>限时模式中 10 秒内答对</td></tr>
+          <tr><td>连击加成</td><td class="num">×1.2 起</td><td>连续答对 3 题开始叠加，最多 ×2</td></tr>
+          <tr><td>使用提示</td><td class="num">−3</td><td>查看中间步骤会扣除分数</td></tr>
+          <tr><td>答错 / 跳过</td><td class="num">0</td><td>不扣分，但会中断连击</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- =========================================================== FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">常见问题</span>
+        <h2>你可能想问</h2>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>A、J、Q、K 分别算几？</summary>
+          <p>A 记作 1，J 记作 11，Q 记作 12，K 记作 13。大小王不参与发牌。</p>
+        </details>
+        <details>
+          <summary>一定要四张牌都用上吗？</summary>
+          <p>是。每张牌必须且只能使用一次，用三张或重复使用同一张都算无效解法。</p>
+        </details>
+        <details>
+          <summary>可以省略乘号或使用括号吗？</summary>
+          <p>括号可以随意使用，它只改变运算顺序，不改变数值。乘号不能省略，否则算式会有歧义。</p>
+        </details>
+        <details>
+          <summary>四张牌真的凑不出 24 怎么办？</summary>
+          <p>确实存在无解的牌型，比如 1、1、1、1。游戏会检测并提示你换一组，不用怀疑自己。</p>
+        </details>
+        <details>
+          <summary>同一手牌有多种解法，算都对吗？</summary>
+          <p>算。只要算式合法且结果为 24 即判定正确，用哪种思路都可以。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== CTA -->
+  <section class="section" aria-labelledby="cta-title">
+    <div class="wrap">
+      <div class="cta-band">
+        <h2 id="cta-title">准备好接受 24 点的挑战了吗？</h2>
+        <p>再想三秒，不如直接开一局。四张牌已经在等你了。</p>
+        <a class="btn btn-primary" href="#play">开始挑战</a>
+        <a class="btn btn-ghost" href="#rules">复习一下规则</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year">2026</span> 速算24点 · 用最简单的规则，做最烧脑的游戏</span>
+    <a href="#top">回到顶部 ↑</a>
+  </div>
+</footer>
+
+<script src="assets/solver.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
